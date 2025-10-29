@@ -1,30 +1,20 @@
 <div align="center">
 
-# 🗑️ Waste Detection System
+# 🔬 Skin Cancer Detection System
 
-### *AI-Powered Real-Time Object Detection for Waste Management*
+### *AI-Powered Medical Image Analysis for Early Detection*
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![YOLO11](https://img.shields.io/badge/YOLO-v11-00FFFF?logo=yolo&logoColor=white)](https://github.com/ultralytics/ultralytics)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.68%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Azure](https://img.shields.io/badge/Azure-Deployed-0089D6?logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![YOLO](https://img.shields.io/badge/YOLO-v12-00FFFF?logo=yolo&logoColor=white)](https://github.com/ultralytics/ultralytics)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status"/>
-  <img src="https://img.shields.io/github/stars/NayeemHossenJim/Object-Detection?style=social" alt="Stars"/>
-  <img src="https://img.shields.io/github/forks/NayeemHossenJim/Object-Detection?style=social" alt="Forks"/>
+  <img src="https://img.shields.io/badge/Status-Active-success" alt="Status"/>
+  <img src="https://img.shields.io/github/stars/NayeemHossenJim/Skin-Cancer-Detection?style=social" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/NayeemHossenJim/Skin-Cancer-Detection?style=social" alt="Forks"/>
 </p>
-
-[Features](#-key-features) •
-[Demo](#-demo) •
-[Installation](#-installation) •
-[Usage](#-usage) •
-[Architecture](#-project-architecture) •
-[Deployment](#-deployment) •
-[Contributing](#-contributing)
-
 </div>
 
 ---
@@ -35,13 +25,12 @@
 - [Key Features](#-key-features)
 - [Demo](#-demo)
 - [Technology Stack](#-technology-stack)
-- [Project Architecture](#-project-architecture)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Model Training](#-model-training)
+- [Model Details](#-model-details)
 - [API Documentation](#-api-documentation)
-- [Deployment](#-deployment)
 - [Project Structure](#-project-structure)
+- [Disclaimer](#-disclaimer)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Contact](#-contact)
@@ -50,16 +39,25 @@
 
 ## 🌟 Overview
 
-**Waste Detection System** is an end-to-end computer vision project leveraging the power of **YOLO11** for real-time waste object detection. This production-ready solution is designed to help automate waste management processes, improve recycling efficiency, and contribute to environmental sustainability.
+**Skin Cancer Detection System** is an advanced computer vision application that leverages deep learning to assist in the early detection and identification of skin lesions. Built with **YOLO (You Only Look Once)** object detection architecture, this tool provides real-time analysis of dermatological images to help identify potential areas of concern.
 
-The project encompasses the complete ML lifecycle:
-- 📊 **Data Ingestion & Validation**
-- 🧠 **Model Training & Optimization**
-- 🚀 **RESTful API Development**
-- ☁️ **Cloud Deployment on Azure**
-- 🐳 **Containerization with Docker**
+### 🎯 Purpose
 
-Perfect for smart cities, recycling facilities, and environmental monitoring applications.
+This system is designed to:
+- 🔍 **Detect and localize** skin lesions in medical images
+- ⚡ **Provide instant analysis** with confidence scores
+- 🖼️ **Visualize results** with annotated bounding boxes
+- 🌐 **Offer easy access** through a modern web interface
+
+### ⚕️ Medical Application
+
+Early detection of skin cancer significantly improves treatment outcomes. This AI-powered tool aims to assist healthcare professionals and individuals in:
+- Initial screening of suspicious skin lesions
+- Prioritizing cases for dermatological examination
+- Tracking changes in existing lesions over time
+- Educational purposes in medical training
+
+> **⚠️ Important:** This tool is designed as an assistive technology and should not replace professional medical diagnosis. Always consult qualified healthcare providers for medical decisions.
 
 ---
 
@@ -70,47 +68,76 @@ Perfect for smart cities, recycling facilities, and environmental monitoring app
 <td>
 
 ### 🎯 Core Capabilities
-- ✅ Real-time waste object detection
-- ✅ Multiple waste category classification
-- ✅ High accuracy with YOLO11 architecture
-- ✅ Batch and single image processing
-- ✅ Video stream analysis support
+- ✅ Real-time lesion detection
+- ✅ Multiple lesion classification
+- ✅ High-accuracy YOLO architecture
+- ✅ Confidence score reporting
+- ✅ Bounding box visualization
 
 </td>
 <td>
 
 ### 🛠️ Technical Features
-- ✅ Modular and scalable architecture
-- ✅ Comprehensive logging system
-- ✅ Custom exception handling
-- ✅ Automated training pipeline
-- ✅ Model versioning support
+- ✅ FastAPI backend
+- ✅ Modern responsive UI
+- ✅ Image preprocessing pipeline
+- ✅ RESTful API endpoints
+- ✅ Base64 image encoding
 
 </td>
 </tr>
 <tr>
 <td>
 
-### 🌐 Deployment Ready
-- ✅ FastAPI-based REST API
-- ✅ Docker containerization
-- ✅ Azure cloud deployment
-- ✅ CI/CD pipeline compatible
-- ✅ Production-grade code quality
+### 🌐 User Interface
+- ✅ Drag-and-drop upload
+- ✅ Real-time processing feedback
+- ✅ Interactive results display
+- ✅ Download annotated images
+- ✅ Mobile-responsive design
 
 </td>
 <td>
 
-### 📊 MLOps Integration
-- ✅ Data validation checks
-- ✅ Model performance tracking
-- ✅ Artifact management
-- ✅ Configuration management
-- ✅ Reproducible experiments
+### 📊 Analysis Features
+- ✅ Object counting
+- ✅ Confidence scoring
+- ✅ Bounding box coordinates
+- ✅ Visual annotations
+- ✅ Detection summary
 
 </td>
 </tr>
 </table>
+
+---
+
+## 🎬 Demo
+
+### Web Interface
+
+The application features an intuitive web interface that allows users to:
+
+1. **Upload Image**: Drag and drop or click to select dermatological images
+2. **Processing**: AI model analyzes the image in real-time
+3. **View Results**: See detected lesions with bounding boxes and confidence scores
+4. **Download**: Save annotated images for records
+
+### Sample Output
+
+```json
+{
+  "detections": [
+    {
+      "class": "melanoma",
+      "confidence": 0.87,
+      "box": [145.3, 230.1, 289.7, 374.5]
+    }
+  ],
+  "image": "data:image/jpeg;base64,...",
+  "total_objects": 1
+}
+```
 
 ---
 
@@ -121,54 +148,21 @@ Perfect for smart cities, recycling facilities, and environmental monitoring app
 ### Core Technologies
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 
 ### Libraries & Frameworks
 
 | Category | Technologies |
 |----------|-------------|
-| **Deep Learning** | PyTorch, Ultralytics YOLO11, TorchVision |
-| **Computer Vision** | OpenCV, Pillow |
-| **Data Science** | NumPy, Pandas, Matplotlib, Seaborn |
-| **API Framework** | FastAPI, Uvicorn |
-| **Utilities** | PyYAML, Dill, From-Root, Gdown |
-| **Deployment** | Docker, Azure App Service |
+| **Deep Learning** | Ultralytics YOLO, PyTorch |
+| **Computer Vision** | OpenCV, Pillow (PIL) |
+| **Data Processing** | NumPy, Base64 |
+| **Web Framework** | FastAPI, Uvicorn |
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Templating** | Jinja2 |
 
 </div>
-
----
-
-## 🏗️ Project Architecture
-
-```mermaid
-graph TB
-    A[Data Source] --> B[Data Ingestion]
-    B --> C[Data Validation]
-    C --> D[Model Training]
-    D --> E[Model Evaluation]
-    E --> F[Model Registry]
-    F --> G[FastAPI Service]
-    G --> H[Docker Container]
-    H --> I[Azure Deployment]
-    I --> J[End Users]
-    
-    style A fill:#e1f5ff
-    style D fill:#fff4e1
-    style G fill:#e8f5e9
-    style I fill:#f3e5f5
-```
-
-### Pipeline Components
-
-1. **Data Ingestion**: Automated data collection and preprocessing
-2. **Data Validation**: Schema validation and quality checks
-3. **Model Training**: YOLO11 training with custom configurations
-4. **Model Evaluation**: Performance metrics and validation
-5. **API Service**: RESTful API for inference
-6. **Deployment**: Containerized cloud deployment
 
 ---
 
@@ -179,20 +173,21 @@ graph TB
 - Python 3.8 or higher
 - pip package manager
 - Git
-- (Optional) Docker for containerization
+- 4GB+ RAM recommended
+- Webcam or image files for testing
 
 ### Quick Start
 
 #### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/NayeemHossenJim/Object-Detection.git
-cd Object-Detection
+git clone https://github.com/NayeemHossenJim/Skin-Cancer-Detection.git
+cd Skin-Cancer-Detection
 ```
 
 #### 2️⃣ Create Virtual Environment
 
-**Windows:**
+**Windows (PowerShell):**
 ```powershell
 python -m venv venv
 .\venv\Scripts\activate
@@ -211,29 +206,48 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-#### 4️⃣ Install Package in Development Mode
+#### 4️⃣ Verify Model File
 
-```bash
-pip install -e .
+Ensure the trained model is present:
 ```
+output/best.pt
+```
+
+If the model file is missing, you'll need to train or download a pre-trained model.
 
 ---
 
 ## 🚀 Usage
 
-### Running the Application
+### Starting the Application
 
-#### Start the FastAPI Server
+#### Method 1: Run with Uvicorn
 
 ```bash
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
 ```
 
-#### Access the Application
+#### Method 2: Run with Python
+
+```bash
+python -m uvicorn app:app --reload
+```
+
+### Accessing the Application
+
+Once started, open your browser and navigate to:
 
 - **Web Interface**: http://localhost:8000
 - **API Documentation**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
+- **Alternative Docs**: http://localhost:8000/redoc
+
+### Using the Web Interface
+
+1. **Open** http://localhost:8000 in your browser
+2. **Upload** a skin lesion image (JPG, PNG, GIF, WebP)
+3. **Wait** for AI processing (typically 1-3 seconds)
+4. **View** detection results with annotated bounding boxes
+5. **Download** the annotated image if needed
 
 ### Using the API
 
@@ -242,48 +256,79 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8000
 ```python
 import requests
 
-# Upload image for detection
-url = "http://localhost:8000/predict"
-files = {"file": open("waste_image.jpg", "rb")}
+# Detect skin lesions in an image
+url = "http://localhost:8000/detect/"
+files = {"file": open("skin_lesion.jpg", "rb")}
 response = requests.post(url, files=files)
 
-print(response.json())
+results = response.json()
+print(f"Total lesions detected: {results['total_objects']}")
+
+for detection in results['detections']:
+    print(f"Class: {detection['class']}")
+    print(f"Confidence: {detection['confidence']:.2%}")
+    print(f"Location: {detection['box']}")
 ```
 
 #### cURL Example
 
 ```bash
-curl -X POST "http://localhost:8000/predict" \
+curl -X POST "http://localhost:8000/detect/" \
      -H "accept: application/json" \
      -H "Content-Type: multipart/form-data" \
-     -F "file=@waste_image.jpg"
+     -F "file=@skin_lesion.jpg"
+```
+
+#### JavaScript Example
+
+```javascript
+const formData = new FormData();
+formData.append('file', fileInput.files[0]);
+
+fetch('http://localhost:8000/detect/', {
+    method: 'POST',
+    body: formData
+})
+.then(response => response.json())
+.then(data => {
+    console.log('Detections:', data.detections);
+    console.log('Total objects:', data.total_objects);
+});
 ```
 
 ---
 
-## 🧠 Model Training
+## 🧠 Model Details
 
-### Configure Training Parameters
+### Architecture
 
-Edit the configuration files in `wasteDetection/constant/training_pipeline/`
+- **Model**: YOLO (You Only Look Once)
+- **Version**: YOLOv8 (Ultralytics)
+- **Task**: Object Detection
+- **Input**: RGB images (various sizes)
+- **Output**: Bounding boxes, class labels, confidence scores
 
-### Run Training Pipeline
+### Model File
 
-```python
-from wasteDetection.pipeline.training_pipeline import TrainingPipeline
+- **Location**: `output/best.pt`
+- **Format**: PyTorch weights
+- **Size**: Varies based on model variant
 
-# Initialize and run training
-pipeline = TrainingPipeline()
-pipeline.run_pipeline()
-```
+### Training Details
 
-### Training Notebook
+The model has been trained to detect and classify various types of skin lesions. Key characteristics:
 
-For interactive training and experimentation:
+- **Classes**: Custom trained for skin lesion types
+- **Confidence Threshold**: Configurable (default varies)
+- **IoU Threshold**: Non-maximum suppression
+- **Preprocessing**: Automatic image normalization
 
-```bash
-jupyter notebook research/trials.ipynb
-```
+### Performance Considerations
+
+- **Inference Speed**: Real-time (< 100ms per image on GPU)
+- **GPU Acceleration**: Automatically utilized if available
+- **CPU Fallback**: Supported but slower
+- **Batch Processing**: Single image per request
 
 ---
 
@@ -293,168 +338,190 @@ jupyter notebook research/trials.ipynb
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `/` | Home page |
-| `POST` | `/predict` | Single image prediction |
-| `POST` | `/batch-predict` | Batch image prediction |
-| `GET` | `/health` | Health check endpoint |
-| `GET` | `/docs` | Interactive API documentation |
+| `GET` | `/` | Web interface homepage |
+| `POST` | `/detect/` | Detect skin lesions in uploaded image |
+| `GET` | `/docs` | Interactive API documentation (Swagger UI) |
+| `GET` | `/redoc` | Alternative API documentation (ReDoc) |
 
-### Request/Response Examples
+### POST /detect/
 
-#### Prediction Request
+Upload an image and receive detection results.
 
-```json
-{
-  "image": "base64_encoded_image_string"
-}
+**Request:**
+- Method: `POST`
+- Content-Type: `multipart/form-data`
+- Body: Form data with file field
+
+**Request Example:**
+```python
+files = {"file": ("image.jpg", open("image.jpg", "rb"), "image/jpeg")}
+response = requests.post("http://localhost:8000/detect/", files=files)
 ```
 
-#### Prediction Response
-
+**Response:**
 ```json
 {
-  "predictions": [
+  "detections": [
     {
-      "class": "plastic_bottle",
-      "confidence": 0.95,
-      "bbox": [x1, y1, x2, y2]
+      "class": "melanoma",
+      "confidence": 0.87,
+      "box": [145.3, 230.1, 289.7, 374.5]
+    },
+    {
+      "class": "nevus",
+      "confidence": 0.76,
+      "box": [45.1, 120.3, 189.6, 264.8]
     }
   ],
-  "inference_time": "0.045s"
+  "image": "data:image/jpeg;base64,/9j/4AAQSkZJRg...",
+  "total_objects": 2
 }
 ```
 
----
+**Response Fields:**
+- `detections`: Array of detected objects
+  - `class`: Lesion type/classification
+  - `confidence`: Detection confidence (0-1)
+  - `box`: Bounding box coordinates [x1, y1, x2, y2]
+- `image`: Base64-encoded annotated image
+- `total_objects`: Count of detected lesions
 
-## 🐳 Deployment
-
-### Docker Deployment
-
-#### Build Docker Image
-
-```bash
-docker build -t waste-detection:latest .
-```
-
-#### Run Container
-
-```bash
-docker run -p 8000:8000 waste-detection:latest
-```
-
-### Azure Deployment
-
-#### Prerequisites
-- Azure CLI installed
-- Azure subscription active
-
-#### Deploy to Azure App Service
-
-```bash
-# Login to Azure
-az login
-
-# Create resource group
-az group create --name waste-detection-rg --location eastus
-
-# Create App Service plan
-az appservice plan create --name waste-detection-plan \
-    --resource-group waste-detection-rg --sku B1 --is-linux
-
-# Deploy container
-az webapp create --resource-group waste-detection-rg \
-    --plan waste-detection-plan --name waste-detection-app \
-    --deployment-container-image-name waste-detection:latest
-```
-
-### Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-MODEL_PATH=models/best.pt
-CONFIDENCE_THRESHOLD=0.5
-IOU_THRESHOLD=0.45
-MAX_DETECTIONS=100
-AZURE_STORAGE_CONNECTION_STRING=your_connection_string
-```
+**Status Codes:**
+- `200`: Success
+- `422`: Validation error (invalid file format)
+- `500`: Internal server error
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Object-Detection/
+Skin-Cancer-Detection/
 │
-├── 📂 wasteDetection/              # Main package
-│   ├── 📂 components/              # Core components
-│   │   ├── data_ingestion.py      # Data loading & preprocessing
-│   │   ├── data_validation.py     # Data quality checks
-│   │   └── model_trainer.py       # Model training logic
-│   │
-│   ├── 📂 constant/                # Configuration constants
-│   │   ├── application.py         # App-level constants
-│   │   └── 📂 training_pipeline/  # Training configs
-│   │
-│   ├── 📂 entity/                  # Data classes
-│   │   ├── artifacts_entity.py    # Artifact definitions
-│   │   └── config_entity.py       # Configuration entities
-│   │
-│   ├── 📂 pipeline/                # ML pipelines
-│   │   └── training_pipeline.py   # Training orchestration
-│   │
-│   ├── 📂 utils/                   # Utility functions
-│   │   └── main_utils.py          # Helper functions
-│   │
-│   ├── 📂 exception/               # Custom exceptions
-│   └── 📂 logger/                  # Logging configuration
+├── 📂 output/                      # Model files
+│   └── best.pt                    # Trained YOLO model
 │
-├── 📂 research/                    # Experiments & notebooks
-│   └── trials.ipynb               # Experimentation notebook
+├── 📂 static/                     # Static assets
+│   ├── style.css                 # Application styles
+│   └── script.js                 # Frontend JavaScript
 │
-├── 📂 templates/                   # HTML templates
-│   └── index.html                 # Web interface
+├── 📂 templates/                  # HTML templates
+│   └── index.html                # Main web interface
 │
-├── 📂 data/                        # Dataset directory
-│
-├── 📄 app.py                       # FastAPI application
-├── 📄 requirements.txt             # Python dependencies
-├── 📄 setup.py                     # Package configuration
-├── 📄 Dockerfile                   # Docker configuration
-├── 📄 template.py                  # Project structure generator
-├── 📄 LICENSE                      # License file
-└── 📄 README.md                    # This file
+├── 📄 app.py                      # FastAPI application
+├── 📄 requirements.txt            # Python dependencies
+├── 📄 README.md                   # This file
+└── 📄 LICENSE                     # License information
 ```
+
+### Key Files
+
+- **app.py**: Main FastAPI application with detection endpoint
+- **output/best.pt**: Trained YOLO model weights
+- **templates/index.html**: Web interface
+- **static/style.css**: UI styling
+- **static/script.js**: Frontend interaction logic
+- **requirements.txt**: Python package dependencies
+
+---
+
+## ⚠️ Disclaimer
+
+### Medical Device Notice
+
+This software is provided for **educational and research purposes only**. It is NOT:
+
+- ❌ A certified medical device
+- ❌ Approved for clinical diagnosis
+- ❌ A replacement for professional medical advice
+- ❌ Validated for regulatory compliance (FDA, CE, etc.)
+
+### Usage Guidelines
+
+- ✅ **DO** use for preliminary screening
+- ✅ **DO** consult healthcare professionals
+- ✅ **DO** verify results with medical experts
+- ✅ **DO** use as an educational tool
+- ❌ **DO NOT** rely solely on this tool for diagnosis
+- ❌ **DO NOT** use as a substitute for medical care
+- ❌ **DO NOT** make treatment decisions based on results
+
+### Accuracy and Limitations
+
+- Model accuracy depends on training data quality
+- Performance varies with image quality and lighting
+- May produce false positives or false negatives
+- Requires validation in clinical settings
+- Not suitable for emergency medical situations
+
+### Legal Notice
+
+The developers and contributors of this software are not responsible for any medical decisions made based on the output of this system. Always seek professional medical advice from qualified healthcare providers.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Contributions are welcome! Here's how you can help improve this project:
 
 ### How to Contribute
 
 1. **Fork the repository**
-2. **Create a feature branch**
    ```bash
-   git checkout -b feature/AmazingFeature
+   # Click the "Fork" button on GitHub
    ```
-3. **Commit your changes**
+
+2. **Clone your fork**
    ```bash
-   git commit -m "Add some AmazingFeature"
+   git clone https://github.com/YOUR_USERNAME/Skin-Cancer-Detection.git
+   cd Skin-Cancer-Detection
    ```
-4. **Push to the branch**
+
+3. **Create a feature branch**
    ```bash
-   git push origin feature/AmazingFeature
+   git checkout -b feature/amazing-feature
    ```
-5. **Open a Pull Request**
+
+4. **Make your changes**
+   - Add new features
+   - Fix bugs
+   - Improve documentation
+   - Enhance UI/UX
+
+5. **Commit your changes**
+   ```bash
+   git add .
+   git commit -m "Add amazing feature"
+   ```
+
+6. **Push to your fork**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+7. **Open a Pull Request**
+   - Go to the original repository
+   - Click "New Pull Request"
+   - Describe your changes
 
 ### Development Guidelines
 
-- Follow PEP 8 style guidelines
-- Add unit tests for new features
+- Follow PEP 8 style guidelines for Python code
+- Add comments for complex logic
+- Test your changes thoroughly
 - Update documentation as needed
-- Ensure all tests pass before submitting PR
+- Maintain backward compatibility
+- Write meaningful commit messages
+
+### Areas for Contribution
+
+- 🐛 **Bug Fixes**: Report and fix issues
+- ✨ **Features**: Propose and implement new features
+- 📚 **Documentation**: Improve README and code comments
+- 🎨 **UI/UX**: Enhance the web interface
+- 🧪 **Testing**: Add unit and integration tests
+- 🔧 **Performance**: Optimize code and model inference
+- 🌐 **Localization**: Add multi-language support
 
 ---
 
@@ -462,18 +529,76 @@ Contributions are welcome! Here's how you can help:
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
+```
+MIT License
+
+Copyright (c) 2024 Nayeem Hossen Jim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+```
+
 ---
 
 ## 📧 Contact
 
 **Nayeem Hossen Jim**
 
-- 📧 Email: [nayeemhossenjim@gmail.com](mailto:nayeemhossenjim@gmail.com)
-- 💼 GitHub: [@NayeemHossenJim](https://github.com/NayeemHossenJim)
+- 📧 **Email**: [nayeemhossenjim@gmail.com](mailto:nayeemhossenjim@gmail.com)
+- 💼 **GitHub**: [@NayeemHossenJim](https://github.com/NayeemHossenJim)
+- 🔗 **Project**: [Skin-Cancer-Detection](https://github.com/NayeemHossenJim/Skin-Cancer-Detection)
 
 ---
+
+## 🙏 Acknowledgments
+
+- **Ultralytics**: For the YOLO framework
+- **FastAPI**: For the excellent web framework
+- **OpenCV Community**: For computer vision tools
+- **Medical Community**: For guidance on skin lesion analysis
+- **Open Source Contributors**: For inspiring this project
+
+---
+
+## 📊 Project Statistics
+
+<div align="center">
+
+![GitHub repo size](https://img.shields.io/github/repo-size/NayeemHossenJim/Skin-Cancer-Detection)
+![GitHub language count](https://img.shields.io/github/languages/count/NayeemHossenJim/Skin-Cancer-Detection)
+![GitHub top language](https://img.shields.io/github/languages/top/NayeemHossenJim/Skin-Cancer-Detection)
+![GitHub last commit](https://img.shields.io/github/last-commit/NayeemHossenJim/Skin-Cancer-Detection)
+
+</div>
+
+---
+
 ## ⭐ Show Your Support
 
-If you find this project helpful, please consider giving it a ⭐️ on GitHub!
+If you find this project helpful for your research or learning, please consider:
+
+- ⭐ **Starring** the repository on GitHub
+- 🔀 **Forking** to create your own version
+- 📢 **Sharing** with others who might benefit
+- 🐛 **Reporting** issues and bugs
+- 💡 **Suggesting** new features and improvements
+
 
 ---
+
+<div align="center">
+
+*Making early skin cancer detection accessible to everyone*
+
+</div>
