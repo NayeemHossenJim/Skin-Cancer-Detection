@@ -19,7 +19,7 @@ templates = Jinja2Templates(directory="templates")
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-model = YOLO("C:/Code/Object-Detection/output/best.pt")
+model = YOLO("C:/Code/Skin-Cancer-Detection/output/best.pt")
 
 @app.post("/detect/")
 async def detect_objects(file: UploadFile):
