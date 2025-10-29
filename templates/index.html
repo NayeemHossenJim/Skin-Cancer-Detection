@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Object Detection Studio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>AI Object Detection</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Intelligent Object Detection</span>
+                        <br>Powered by AI
+                    </h1>
+                    <p class="hero-subtitle">
+                        Upload any image and watch our advanced AI model identify and locate objects with incredible accuracy.
+                        Experience the future of computer vision technology.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-upload"></i>
+                            Start Detection
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToFeatures()">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="detection-preview">
+                        <div class="preview-card">
+                            <i class="fas fa-eye detection-icon"></i>
+                            <h3>Real-time Detection</h3>
+                            <p>Instant object recognition with bounding boxes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <div class="container">
+                <div class="upload-card">
+                    <div class="upload-area" id="uploadArea">
+                        <input type="file" id="fileInput" accept="image/*" class="file-input">
+                        <div class="upload-content">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Drop your image here</h3>
+                            <p>or click to browse</p>
+                            <div class="upload-formats">
+                                <span>Supports: JPG, PNG, GIF, WebP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="processing-overlay" id="processingOverlay">
+                        <div class="spinner"></div>
+                        <p>Analyzing image with AI...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" id="resultsSection" style="display: none;">
+            <div class="container">
+                <h2 class="section-title">Detection Results</h2>
+                <div class="results-grid">
+                    <div class="result-image-container">
+                        <img id="resultImage" class="result-image" alt="Detection Result">
+                        <div class="image-overlay">
+                            <button class="btn btn-small" onclick="downloadImage()">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detection-stats">
+                        <div class="stats-header">
+                            <h3>Detection Summary</h3>
+                            <div class="total-objects">
+                                <span id="totalObjects">0</span>
+                                <span>Objects Found</span>
+                            </div>
+                        </div>
+                        <div class="detections-list" id="detectionsList">
+                            <!-- Detection items will be populated here -->
+                        </div>
+                        <div class="stats-footer">
+                            <button class="btn btn-primary" onclick="resetDetection()">
+                                <i class="fas fa-redo"></i>
+                                Detect Another
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Advanced Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightning-bolt"></i>
+                        </div>
+                        <h3>Lightning Fast</h3>
+                        <p>State-of-the-art YOLO model processes images in milliseconds</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>High Accuracy</h3>
+                        <p>Advanced deep learning algorithms ensure precise object detection</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Multiple Objects</h3>
+                        <p>Simultaneously detect and classify numerous objects in a single image</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Works seamlessly across all devices and screen sizes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 AI Object Detection Studio. Powered by advanced machine learning.</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
