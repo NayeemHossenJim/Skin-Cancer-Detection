@@ -19,7 +19,7 @@ templates = Jinja2Templates(directory="templates")
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-model = YOLO("C:/Code/Skin-Cancer-Detection/output/best.pt")
+model = YOLO("output/best.pt")
 
 @app.post("/detect/")
 async def detect_objects(file: UploadFile):
@@ -31,7 +31,8 @@ async def detect_objects(file: UploadFile):
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     pil_image = Image.fromarray(image_rgb)
     # Perform detection
-    results = model.predict(image)
+    # Force CPU for lower memory and portability inside slim image
+    results = model.predict(image, device="cpu")
 
     detections = []
     
