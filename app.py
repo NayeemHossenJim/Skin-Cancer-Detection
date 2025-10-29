@@ -1,13 +1,13 @@
-import cv2
-import numpy as np
-import base64
 import io
-from fastapi import FastAPI, File, UploadFile, Request
+import cv2
+import base64
+import numpy as np
+from ultralytics import YOLO
 from fastapi.responses import HTMLResponse
+from PIL import Image, ImageDraw, ImageFont
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from ultralytics import YOLO
-from PIL import Image, ImageDraw, ImageFont
+from fastapi import FastAPI, File, UploadFile, Request
 
 app = FastAPI()
 
@@ -27,11 +27,9 @@ async def detect_objects(file: UploadFile):
     image_bytes = await file.read()
     image = np.frombuffer(image_bytes, np.uint8)
     image = cv2.imdecode(image, cv2.IMREAD_COLOR)
-    
     # Convert BGR to RGB for PIL
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     pil_image = Image.fromarray(image_rgb)
-
     # Perform detection
     results = model.predict(image)
 
