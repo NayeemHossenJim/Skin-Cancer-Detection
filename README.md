@@ -1,6 +1,11 @@
 <div align="center">
 
+
 # 🔬 Skin Cancer Detection System
+<a href="https://www.jimml.signalsmind.com" target="_blank">
+  <img src="https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Fwww.jimml.signalsmind.com-brightgreen?style=for-the-badge" alt="Live Demo: https://www.jimml.signalsmind.com" />
+  
+</a>
 
 ### *AI-Powered Medical Image Analysis for Early Detection*
 
@@ -117,6 +122,8 @@ Early detection of skin cancer significantly improves treatment outcomes. This A
 ### Web Interface
 
 The application features an intuitive web interface that allows users to:
+
+👉 Try it online (no setup needed): https://www.jimml.signalsmind.com
 
 1. **Upload Image**: Drag and drop or click to select dermatological images
 2. **Processing**: AI model analyzes the image in real-time
