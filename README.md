@@ -473,6 +473,7 @@ Contributions are welcome! Here's how you can help improve this project:
 
 ### How to Contribute
 
+
 1. **Fork the repository**
    ```bash
    # Click the "Fork" button on GitHub
