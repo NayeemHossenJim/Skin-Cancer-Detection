@@ -115,18 +115,6 @@ Early detection of skin cancer significantly improves treatment outcomes. This A
 
 ---
 
-## 🎬 Demo
-
-### Web Interface
-
-The application features an intuitive web interface that allows users to:
-
-👉 Try it online (no setup needed): https://www.jimml.signalsmind.com
-
-1. **Upload Image**: Drag and drop or click to select dermatological images
-2. **Processing**: AI model analyzes the image in real-time
-3. **View Results**: See detected lesions with bounding boxes and confidence scores
-4. **Download**: Save annotated images for records
 
 ### Sample Output
 
